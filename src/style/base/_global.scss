@@ -1,0 +1,48 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+  color: $text-primary;
+  background-color: $bg-color;
+  position: relative;
+  z-index: 2;
+}
+
+/* Scene.css */
+.canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+
+  canvas {
+    pointer-events: none;
+  }
+}
+
+.home-page,
+.about-page,
+.skills-page,
+.works-section,
+.contact-page,
+.services-page,
+.loading-screen {
+  overflow: hidden;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.home-page {
+  z-index: -1;
+}
