@@ -1,0 +1,29 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  @include flex-space-between;
+  padding: 25px 50px;
+  backdrop-filter: blur(4px);
+
+  .navs,
+  .shop {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .navs {
+    .nav {
+      cursor: pointer;
+      transition: color 0.2s linear;
+      &:hover {
+        color: $text-secondary;
+      }
+    }
+  }
+}
