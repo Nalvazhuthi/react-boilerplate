@@ -15,9 +15,6 @@ const NavBar = () => {
             </div>
             <div className="shop">
                 <Search />
-                <a href="#cart">
-                    <CartIcon />
-                </a>
             </div>
         </div>
     )
