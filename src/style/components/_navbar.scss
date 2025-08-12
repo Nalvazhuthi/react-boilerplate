@@ -11,18 +11,34 @@
   padding: 25px 50px;
   backdrop-filter: blur(4px);
 
-  .navs,
-  .shop {
+  .navs {
     display: flex;
     align-items: center;
     gap: 12px;
-  }
-  .navs {
+
     .nav {
       cursor: pointer;
       transition: color 0.2s linear;
-      &:hover {
-        color: $text-secondary;
+      color: var(--text-primary);
+      padding: 6px 10px;
+      font-size: 12px;
+
+      &.button {
+        height: 100%;
+        background-color: #8952e0;
+        color: #FFFFFF;
+        border-radius: 6px;
+      }
+
+      &.toggle-theme {
+        height: 100%;
+        @include flex-center;
+        padding: 4px 10px;
+
+        &:hover {
+          background-color: #bdbdbd4f;
+          border-radius: 6px;
+        }
       }
     }
   }

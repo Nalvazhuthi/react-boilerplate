@@ -1,51 +1,15 @@
 @use "../abstract/variables" as *;
 @use "../abstract/mixins" as *;
 
+
 section {
   padding-top: 85px;
 }
+
 .content-container {
   width: 100%;
   height: 100%;
-  color: $text-primary;
-  background-color: $bg-color;
+  background-color: var(--bg-color);
   position: relative;
   z-index: 2;
-}
-
-/* Scene.css */
-.canvas-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: none;
-  width: 100vw;
-  height: 100vh;
-
-  canvas {
-    pointer-events: none;
-  }
-}
-
-.section-header {
-  font-size: 3vw;
-  position: relative;
-  z-index: 10;
-  padding-left: 120px;
-  .highlight {
-    display: inline;
-    font-size: 3vw;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: 100%;
-      height: 5px;
-      border-radius: 12px;
-      background-color: $text-secondary;
-    }
-  }
 }

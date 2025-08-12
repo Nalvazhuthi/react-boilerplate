@@ -1,5 +1,4 @@
 import React from 'react'
-import { CartIcon } from '../assets/svg/exportIcons'
 
 const Home = () => {
   return (

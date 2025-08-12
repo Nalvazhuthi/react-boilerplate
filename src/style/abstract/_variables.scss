@@ -1,15 +1,12 @@
 @use "functions";
 
-$bg-color: #e2e2e2;
-$bg-secondary: #cecece;
+// background color
+$bg-color-dark: #000000;
+$bg-color-light: #Ffffff;
 
-$text-primary: #000000;
-$text-secondary: #383838;
+// text color
+$text-primary-dark: rgba(255, 255, 255, 0.64);
+$text-primary-light: #33373d;
 
-$text-gray: #7e7d7a;
-$text-disbale: #ffd28f;
-
-$btn-bg: #2f2105;
-$btn-color: #ffffff;
-
-$border-color: #383838;
+$text-highlight-light: #ffffff;
+$text-highlight-dark: #000000;
