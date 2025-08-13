@@ -23,11 +23,11 @@ const NavBar: React.FC = () => {
             </div>
 
             <div className="navs">
-                <div className="nav">Features</div>
-                <div className="nav">Pricing</div>
-                <div className="nav">FAQ</div>
-                <div className="nav">Login</div>
-                <div className="nav button">Sign Up</div>
+                <a href="features" className="nav">Features</a>
+                <a href="pricing" className="nav">Pricing</a>
+                <a href="faq" className="nav">FAQ</a>
+                <a href="login" className="nav">Login</a>
+                <a href="signup" className="nav button">Sign Up</a>
                 <div className="nav toggle-theme" onClick={handleToggleTheme}>
                     {theme === "light" ? <DarkThemeIcon /> : <LightThemeIcon />}
                 </div>
